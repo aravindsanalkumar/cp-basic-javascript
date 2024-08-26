@@ -99,7 +99,6 @@ console.log(max(arr));
 
 const letterFrequency = (phrase) => {
     let frequency = {}
-    
     for(const letter of phrase){
         if(letter in frequency){
             frequency[letter] = frequency[letter] + 1;
@@ -112,4 +111,12 @@ const letterFrequency = (phrase) => {
 }
 
 console.log(letterFrequency('malayalam'));
+
+
+const wordFrequency = (phrase) => {
+    let wordArray = phrase.split(' ');
+    console.log(letterFrequency(wordArray));
+}
+console.log(wordFrequency('lol what lol yo yo yo'));
+
 
