@@ -34,4 +34,16 @@ let playground = document.querySelector('.playground');
 playground.innerHTML = `<h1>${names}</h1>`;
 
 
+const nums = [1,2,3];
+
+let result1 = nums.reduce(function(prev,curr){
+    return prev + curr;
+})
+
+let result2 = nums.reduce((prev,curr) => prev + curr);
+
+console.log(result2);
+
+let netWorth = actors.reduce((prev,curr) => prev + curr.netWorth, 0 );
+console.log(netWorth);
 
